@@ -133,8 +133,6 @@ async def on_message(message):
       await channel.send("Today is " + bths_today + " You have: Geometry, Free Period, Physics then DDP")
     else:
       await channel.send("Today is " + bths_today + " You have: Ela, Spanish, Free Period then World History")
-  if message.content.startswith("$everyone"):
-    await channel.send("@everyone @everyone @everyone wake the fuck up. I don't care if you guys actually have lives")
   if message.content.startswith("$google"):
     await channel.send("Current price of google is " + "$" + google)
   if message.content.startswith("$apple"):
