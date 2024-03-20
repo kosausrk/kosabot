@@ -1,9 +1,9 @@
-# kosabot
-A horribly written discord bot 
+# KosaBot
+Built a discord bot using Discord API (https://discord.com/developers/docs/intro)
 
-
-# PLEASE DO NOT SHARE (DO NOT MAKE PUBLIC) UNTIL YOU CENSOR OUT CONTENT !!!!!
-
-
-
-# Most of content is inside of Replit, test the code there. This could just be a backup save. 
+Features Include: 
+-Get recent news information 
+-Get real time information on my school schedule
+-Get real time stock information 
+-Get inspired with randomized quotes 
+-Get youtuber subscriber information 

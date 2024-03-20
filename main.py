@@ -19,11 +19,6 @@ headline2_description  = soup6.find("div", {"data-pb-field": "description.basic"
 headline3 = soup6.find("h2", {'class': "r-mb h6"})
 headline4 = soup6.find("p", {"class": "r-mb h6"})
 
-#--DOES NOT WORK --
-#headline2 = headline2.get_text()
-#headline2_description = headline2_description.get_text()
-#headline3 = headline3.get_text()
-#headline4 = headline4.get_text()
 
 url5 = requests.get("https://abc7ny.com/place/elmhurst/")
 soup5 = BeautifulSoup(url5.content, "html.parser")
@@ -49,7 +44,8 @@ youtube_data2 = david_dobrik.execute()
 david_dobrik_subcount = youtube_data2['items'][0]['statistics']['subscriberCount']
 youtube_data = pewdiepie.execute()
 pewdiepie_subcount = youtube_data['items'][0]['statistics']['subscriberCount']
-#bths
+
+#BTHS Info
 url4 = requests.get("https://bths.edu")
 soup4 = BeautifulSoup(url4.content, "html.parser")
 content4 = soup4.find("div", {"role": "group"})
@@ -58,6 +54,8 @@ bths_news = soup4.find("td", {"id": "r"})
 bths_news = bths_news.get_text()
 bths_news = " ".join(bths_news.split())
 bths_today =" ".join(bths_today.split())
+
+
 #tesla
 url = requests.get("https://www.marketwatch.com/investing/stock/tsla")
 soup = BeautifulSoup(url.content, 'html.parser')
@@ -87,7 +85,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-  channel = client.get_channel(798724586148855882)
+  channel = client.get_channel(real_channel_id)
   
   
   
