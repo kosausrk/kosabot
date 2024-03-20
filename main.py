@@ -89,25 +89,8 @@ async def on_message(message):
   
   
   
-  
-  #---NOTE THAT message.channel.send IS DEPRACTED, MUST USE await channel.send 
-
-  #Also beautifal soup, web scrapping doesn't work 
-
-
-  #Maybe due to newer version of discordpy, which is not compatible with this code written in 2020. DISCORD PY: V1.5.1  (Bot made in nov 2020)
-
-
-
-
-  
-  
   if message.author == client.user:
-    return
-
-
-
-    
+    return  
 
   #Old code example
   if message.content.startswith("$test"):
